@@ -6,21 +6,23 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/JulianToledano/goingecko/ping"
+	"github.com/CeoFred/goingecko/ping"
 )
 
 type Client struct {
 	httpClient *http.Client
 	baseUrl    string
+	apiKey     string
 }
 
-func NewClient(httpClient *http.Client) *Client {
+func NewClient(httpClient *http.Client, apiKey string) *Client {
 	if httpClient == nil {
 		httpClient = http.DefaultClient
 	}
 	return &Client{
 		httpClient: httpClient,
 		baseUrl:    baseURL,
+		apiKey:     apiKey,
 	}
 }
 
@@ -47,7 +49,7 @@ func doReq(req *http.Request, client *http.Client) ([]byte, error) {
 // MakeReq HTTP request helper
 func (c *Client) MakeReq(url string) ([]byte, error) {
 	req, err := http.NewRequest("GET", url, nil)
-
+	req.Header.Add("x-cg-demo-api-key", c.apiKey)
 	if err != nil {
 		return nil, err
 	}

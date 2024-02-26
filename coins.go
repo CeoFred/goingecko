@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/JulianToledano/goingecko/coins"
-	"github.com/JulianToledano/goingecko/types"
+	"github.com/CeoFred/goingecko/coins"
+	"github.com/CeoFred/goingecko/types"
 )
 
 func (c *Client) CoinsList() ([]*coins.CoinInfo, error) {

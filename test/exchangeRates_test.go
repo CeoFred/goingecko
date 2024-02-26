@@ -3,12 +3,12 @@ package test
 import (
 	"testing"
 
-	"github.com/JulianToledano/goingecko"
+	"github.com/CeoFred/goingecko"
 )
 
 func TestExchangeRates(t *testing.T) {
 
-	cgClient := goingecko.NewClient(nil)
+	cgClient := goingecko.NewClient(nil, "")
 
 	r, err := cgClient.ExchangeRates()
 	if r == nil {

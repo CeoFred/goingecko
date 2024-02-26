@@ -3,7 +3,7 @@ package goingecko
 import (
 	"encoding/json"
 
-	"github.com/JulianToledano/goingecko/trending"
+	"github.com/CeoFred/goingecko/trending"
 )
 
 func (c *Client) Trending() (*trending.Trending, error) {

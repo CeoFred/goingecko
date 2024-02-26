@@ -3,7 +3,7 @@ package goingecko
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/JulianToledano/goingecko/assetPlatforms"
+	"github.com/CeoFred/goingecko/assetPlatforms"
 	"net/url"
 )
 

@@ -1,6 +1,6 @@
 package coins
 
-import "github.com/JulianToledano/goingecko/types"
+import "github.com/CeoFred/goingecko/types"
 
 type Market struct {
 	ID                                         string          `json:"ID"`

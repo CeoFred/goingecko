@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/JulianToledano/goingecko/exchanges"
+	"github.com/CeoFred/goingecko/exchanges"
 	"net/url"
 )
 

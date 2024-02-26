@@ -1,13 +1,13 @@
 package test
 
 import (
-	"github.com/JulianToledano/goingecko"
+	"github.com/CeoFred/goingecko"
 	"testing"
 )
 
 func TestCategoriesList(t *testing.T) {
 
-	cgClient := goingecko.NewClient(nil)
+		cgClient := goingecko.NewClient(nil,"CG-QSYXVe6kc41uvas2kyrEr5Lz")
 
 	categoriesList, err := cgClient.CategoriesList()
 	if categoriesList == nil {
@@ -20,7 +20,7 @@ func TestCategoriesList(t *testing.T) {
 
 func TestCategories(t *testing.T) {
 
-	cgClient := goingecko.NewClient(nil)
+		cgClient := goingecko.NewClient(nil,"")
 
 	categoriesList, err := cgClient.Categories("market_cap_desc")
 	if categoriesList == nil {

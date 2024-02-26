@@ -3,7 +3,7 @@ package goingecko
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/JulianToledano/goingecko/companies"
+	"github.com/CeoFred/goingecko/companies"
 )
 
 func (c *Client) PublicTreasuryCoinId(id string) (*companies.Treasury, error) {

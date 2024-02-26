@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/JulianToledano/goingecko"
+	"github.com/CeoFred/goingecko"
 )
 
 func main() {
-	cgClient := goingecko.NewClient(nil)
+	cgClient := goingecko.NewClient(nil, "")
 	defer cgClient.Close()
 
 	treding, err := cgClient.Trending()

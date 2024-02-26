@@ -3,12 +3,12 @@ package test
 import (
 	"testing"
 
-	"github.com/JulianToledano/goingecko"
+	"github.com/CeoFred/goingecko"
 )
 
 func TestTrending(t *testing.T) {
 
-	cgClient := goingecko.NewClient(nil)
+	cgClient := goingecko.NewClient(nil, "")
 
 	r, err := cgClient.Trending()
 	if r == nil {

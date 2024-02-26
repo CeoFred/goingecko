@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/JulianToledano/goingecko/exchangeRates"
+	"github.com/CeoFred/goingecko/exchangeRates"
 )
 
 func (c *Client) ExchangeRates() (*exchangeRates.Rates, error) {

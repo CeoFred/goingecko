@@ -1,13 +1,13 @@
 package test
 
 import (
-	"github.com/JulianToledano/goingecko"
+	"github.com/CeoFred/goingecko"
 	"testing"
 )
 
 func TestAssetPlatforms(t *testing.T) {
 
-	cgClient := goingecko.NewClient(nil)
+	cgClient := goingecko.NewClient(nil,"")
 
 	assetData, err := cgClient.AssetPlatforms("")
 	if assetData == nil {

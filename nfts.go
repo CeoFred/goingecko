@@ -3,7 +3,7 @@ package goingecko
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/JulianToledano/goingecko/nfts"
+	"github.com/CeoFred/goingecko/nfts"
 	"net/url"
 )
 
